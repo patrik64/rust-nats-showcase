@@ -24,7 +24,7 @@ pub async fn run(client: &Client) -> Result<()> {
     let store = js
         .create_object_store(object_store::Config {
             bucket: BUCKET.to_owned(),
-            description: Some("Blobs stored by nats-showcase".to_owned()),
+            description: Some("Blobs stored by rust-nats-showcase".to_owned()),
             ..Default::default()
         })
         .await

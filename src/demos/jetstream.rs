@@ -30,7 +30,7 @@ pub async fn run(client: &Client) -> Result<()> {
     let mut stream = js
         .create_stream(stream::Config {
             name: STREAM.to_owned(),
-            description: Some("Orders captured by nats-showcase".to_owned()),
+            description: Some("Orders captured by rust-nats-showcase".to_owned()),
             subjects: vec![format!("{PREFIX}.>")],
             storage: StorageType::File,
             max_messages: 10_000,

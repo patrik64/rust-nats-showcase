@@ -28,7 +28,7 @@ pub async fn run(client: &Client) -> Result<()> {
     let store = js
         .create_key_value(kv::Config {
             bucket: BUCKET.to_owned(),
-            description: "Feature flags for nats-showcase".to_owned(),
+            description: "Feature flags for rust-nats-showcase".to_owned(),
             history: 10, // keep the last 10 revisions of every key
             ..Default::default()
         })

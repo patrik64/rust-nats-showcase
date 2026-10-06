@@ -1,4 +1,4 @@
-//! nats-showcase: a guided tour of NATS from Rust with the official `async-nats` client.
+//! rust-nats-showcase: a guided tour of NATS from Rust with the official `async-nats` client.
 //!
 //! Every subcommand is one self-contained demo; `all` (the default) runs them in sequence.
 
@@ -13,7 +13,7 @@ use clap::{Parser, Subcommand};
 
 #[derive(Parser, Debug)]
 #[command(
-    name = "nats-showcase",
+    name = "rust-nats-showcase",
     version,
     about = "A guided tour of NATS from Rust"
 )]
@@ -90,7 +90,7 @@ async fn main() -> Result<()> {
 
 async fn connect(url: &str) -> Result<Client> {
     let client = ConnectOptions::new()
-        .name("nats-showcase")
+        .name("rust-nats-showcase")
         .connection_timeout(Duration::from_secs(5))
         .request_timeout(Some(Duration::from_secs(5)))
         .max_reconnects(10)
