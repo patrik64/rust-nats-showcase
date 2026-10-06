@@ -1,4 +1,4 @@
-# nats-showcase
+# rust-nats-showcase
 
 A guided tour of the [NATS](https://nats.io) messaging system from Rust, built on the
 official [`async-nats`](https://crates.io/crates/async-nats) client. Every subcommand is a
